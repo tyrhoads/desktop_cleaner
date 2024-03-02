@@ -1,7 +1,9 @@
 import shutil, os 
 from pathlib import  Path
 
-myFiles = ['data1.txt','data4.txt','c++Practice.cpp']
-
-for filename in myFiles:
-    print('/Users/tylerrhoads',filename)
+file = open('tester.txt')
+content = file.read()
+print(content)
+file.write("stuff")
+content = file.read()
+print(content)
